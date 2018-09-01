@@ -1,0 +1,42 @@
+% ============================
+% =   Title page    =
+% ============================
+
+\title[The Hitchhiker's Guide To CS]{
+  \begin{tikzpicture}[overlay]
+    \shade [left color=darkblue!30, right color=darkblue] (0,1.6em) rectangle (0.5\linewidth-0.4em,1.5em);
+    \shade [left color=darkblue, right color=darkblue!30] (0.5\linewidth-0.6em,1.6em) rectangle (\linewidth-1em,1.5em);
+        
+    \shade [left color=blue2!30, right color=blue2] (0,1.5em) rectangle (0.5\linewidth-0.4em,-2em);
+    \shade [left color=blue2, right color=blue2!30] (0.5\linewidth-0.6em,1.5em) rectangle (\linewidth-1em,-2em);
+    
+    \shade [left color=darkblue!30, right color=darkblue] (0,-2em) rectangle (0.5\linewidth-0.4em,-2.1em);
+    \shade [left color=darkblue, right color=darkblue!30] (0.5\linewidth-0.6em,-2em) rectangle (\linewidth-1em,-2.1em);
+
+  \end{tikzpicture}
+  The Hitchhiker's Guide To Computer Science
+}
+\subtitle{Sessie \the\value{session}}
+\author[]{
+	Andrei \and Igor \and Joey \and Senne \and Toon
+}
+\institute{
+
+	\begin{tabular}{ll}
+		\includegraphics[align=c, width=1.2cm]{base/res/logo_UA} & University of Antwerp \\
+		\\
+        \includegraphics[align=c, width=1cm]{base/res/logo_WINAK} & WINAK
+	\end{tabular}
+
+}
+
+\addtocounter{minutes}{1}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\addtocounter{minutes}{1}
+\begin{frame}
+	\frametitle{Inhoudstafel}
+	\tableofcontents
+\end{frame}

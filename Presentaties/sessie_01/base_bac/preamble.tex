@@ -1,0 +1,123 @@
+\usepackage{import}
+\usepackage{graphbox}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{pgfpages}
+
+\usetikzlibrary{shapes.arrows, fadings}
+\usetikzlibrary{calc}
+
+% \usetheme{Hannover}
+%\usetheme{PaloAlto}
+\usetheme{Berkeley}
+
+\definecolor{lightblue}{RGB}{100, 150, 220}
+\definecolor{darkblue}{RGB}{75, 135, 205}
+\definecolor{blue2}{RGB}{135, 185, 245}
+\definecolor{lightlightgray}{RGB}{220, 220, 220}
+
+
+%\usecolortheme{wolverine}
+%\usecolortheme{dolphin}
+%\usecolortheme{seahorse}
+
+\setbeamercolor{section in sidebar}{fg=white}
+\setbeamercolor{section in sidebar shaded}{fg=lightgray}
+\setbeamercolor{subsection in sidebar}{fg=white}
+\setbeamercolor{subsection in sidebar shaded}{fg=lightgray}
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{subsection in toc}{fg=black}
+
+\setbeamercolor{sidebar}{bg=lightblue}
+\setbeamercolor{frametitle}{bg=blue2}
+\setbeamercolor{logo}{bg=darkblue}
+\setbeamercolor{title}{fg=black, bg=white}
+
+%\setbeamercolor{palette sidebar primary}{fg=red, bg=red}
+\setbeamercolor{palette sidebar secondary}{fg=white}
+\setbeamercolor{palette sidebar tertiary}{fg=black}
+\setbeamercolor{palette sidebar quaternary}{fg=black}
+
+\setbeamercolor{item projected}{fg=black}
+\setbeamercolor{enumerate subitem}{fg=black}
+\setbeamertemplate{section in toc}[default]
+\setbeamertemplate{subsection in toc}[default]
+%\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+
+\setbeamertemplate{itemize items}[triangle] % circle
+\setbeamercolor{itemize item}{fg=darkblue, bg=darkblue}
+\setbeamercolor{itemize subitem}{fg=blue2, bg=blue2}
+
+\setbeamertemplate{enumerate items}[default]
+
+\setbeamertemplate{note page}[default]
+
+\beamertemplatenavigationsymbolsempty % removes the buttons in the bottom right
+
+\logo{\includegraphics[width=1.5cm]{base/res/logo_CS_1}}
+
+\newcounter{session}
+
+
+% == Schedule ==
+\newcommand{\includeSchedule}[1][0]{%
+  \begin{tabularx}{\linewidth}{lX}
+  25 Sep & Blackboard - SiSa - Email - Lessenrooster - WINAK - Printen - Cursusdienst \\
+  \ifnum #1=1 \\ \hline \fi \\
+  02 Okt & Dual Boot - Virtual Box (practicum) \\
+  \ifnum #1=2 \\ \hline \fi \\
+  Project GAS & Git \\
+  \ifnum #1=3 \\ \hline \fi \\        
+   & SSH - Studento - Komidabot \\
+  \ifnum #1=4 \\ \hline \fi \\
+  \end{tabularx}
+}
+
+% == progress circle ==
+\newcounter{minutes}
+\newcounter{useMinutes}
+\newcommand{\useminutes}{ 
+	\setcounter{useMinutes}{1}
+}
+\newlength{\outerradius}
+\newlength{\innerradius}
+\setlength{\outerradius}{0.65cm}
+\setlength{\innerradius}{0.45cm}
+\addtobeamertemplate{sidebar left}{}{
+  \ifnum\value{useMinutes}>0
+    \pgfmathsetmacro{\ratio}{\value{minutes}/60}
+    \newcommand{\ratioText}{$\theminutes^{min}$}
+  \else
+% 	\pgfmathsetmacro{\ratio}{\insertframenumber/\inserttotalframenumber}
+%     \newcommand{\ratioText}{\insertframenumber/\inserttotalframenumber}
+    \newcommand{\ratioText}{\insertframenumber/\inserttotalframenumber}
+	\pgfmathsetmacro{\ratio}{\insertpagenumber/\insertdocumentendpage}
+  \fi%
+
+  \hspace{0.05cm}
+  %\begin{tikzpicture}
+  %    \fill[blue2] (0,0) circle (\outerradius); % outer line
+  %    \fill[lightblue] (0,0) circle (\outerradius-0.05cm); % band
+  %    \fill[blue2] (0,0) circle (\innerradius+0.05cm); % inner line
+  %    \fill[blue2] (0,0) -- (0, \outerradius) arc (90:90-360*\ratio:\outerradius) -- (0,0); % progress
+  %    \fill[lightblue] (0,0) circle (\innerradius); % inner background
+  %    \node (0,0) {
+  %    	\usebeamerfont{sidebar}
+  % 	\usebeamercolor[fg]{palette sidebar secondary}
+  %     \small{\ratioText}
+  %    };
+  %\end{tikzpicture}
+  \begin{tikzpicture}
+      \fill[blue2] (0,0) circle (\outerradius); % outer line
+      \fill[darkblue] (0,0) -- (0, \outerradius-0.05cm) arc (90:90-360*\ratio:\outerradius-0.05cm) -- (0,0); % progress
+      \fill[blue2] (0,0) circle (\innerradius+0.05cm); % inner line
+      \fill[lightblue] (0,0) circle (\innerradius); % inner background
+      \node at (-0.02cm, 0) {
+      	\usebeamerfont{sidebar}
+		\usebeamercolor[fg]{palette sidebar secondary}
+        \footnotesize{\ratioText}
+       };
+  \end{tikzpicture}
+  \vspace{0.1cm}
+}
