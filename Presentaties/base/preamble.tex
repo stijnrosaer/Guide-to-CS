@@ -3,9 +3,11 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{pgfpages}
+\usepackage{hyperref}
 
 \usetikzlibrary{shapes.arrows, fadings}
 \usetikzlibrary{calc}
+
 
 % \usetheme{Hannover}
 %\usetheme{PaloAlto}
@@ -72,6 +74,22 @@
   \ifnum #1=4 \\ \hline \fi \\
   \end{tabularx}
 }
+
+
+% == Center ==
+% command from stackoverflow: https://tex.stackexchange.com/a/17101
+% arg1: optional bottom offset
+% arg2: thing to center
+\newcommand{\raiseCenter}[2][0]{\begingroup
+	\setbox0=\hbox{#2}%
+	\parbox{\wd0}{\box0\vspace{#1}}\endgroup}
+
+
+% == Links ==
+\definecolor{linkblue}{HTML}{0000EE}
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{#2}~\raiseCenter[0.1cm]{\includegraphics[width=0.35cm]{base/res/link}}}}
+
+
 
 % == progress circle ==
 \newcounter{minutes}
