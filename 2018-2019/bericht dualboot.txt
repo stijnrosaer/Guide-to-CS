@@ -1,0 +1,13 @@
+Hey daar!
+
+Volgende dinsdag (2 oktober) houden we een practicum met the Guide to CS om te helpen bij het opstellen van een Linux omgeving op je computer. Deze sessie zal doorgaan in het computerlokaal M.G.025 om 16u.
+
+Om deel te nemen aan dit practicum, moet je enkele voorbereidingen treffen. Wij vragen het volgende:
+ - Maak op voorhand een externe backup van alle belangrijke bestanden die op je laptop staan, just in case. Je kan hiervoor een externe harde schijf, cloud storage platform of dergelijke gebruiken.
+ - Breng je laptop mee.
+ - Breng een lege USB stick van minstens 8GB mee.
+
+Deze sessie kan uitlopen als er problemen optreden. Voor iedereen die nog extra hulp nodig heeft na de sessie voorzien we een extra moment op donderdag 4 oktober om 13:45u. Dit valt samen met het practicum van IP, maar dit is normaal geen probleem aangezien je ook kan aansluiten bij de 2de groep van 16u indien nodig.
+
+Groetjes en tot dan!
+Het Guide to CS team
