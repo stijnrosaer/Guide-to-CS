@@ -30,13 +30,11 @@
 			\includegraphics[width=.7\linewidth,]{res/os}
     \end{columns}
 
-	\note{
-    	\begin{itemize}
-        	\item OS bouwt op hardware. Applicaties bouwen op OS.
-            \item Taken, projecten, examens $\rightarrow$ Linux
-            \item Boot simpel geval van dual boot
-        \end{itemize}
-    }
+	% NOTE:
+	% - OS bouwt op hardware. Applicaties bouwen op OS.
+	% - Taken, projecten, examens $\rightarrow$ Linux
+	% - Boot simpel geval van dual boot
+
 	
 \end{frame}
 
@@ -49,19 +47,14 @@
 		\item Linux = Free Open Source OS
         \item \href{https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg}{A lot of Forks} $\rightarrow$ Linux Distribution
 	\end{itemize}
-    \begin{itemize}
-        \item \hyperlink{ubuntu}{Ubuntu 18 LTS}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[label=ubuntu]
-	\frametitle{Ubuntu $ $ Ubuntu Gnome}
-    Ubuntu
-	\begin{itemize}
-		\item Standard distribution (Unity)
-		\item Installed on lab pc's
-	\end{itemize}
-    
+	
+	\vfill
+	
+	\centering 
+	\tcbox[colback=white, colframe=darkblue]{
+		\LARGE Ubuntu 18.04 LTS
+	}
+	
 \end{frame}
 
 \section{Virtual Machine}
@@ -87,9 +80,12 @@
                 \item[$-$] Not reliable
             \end{enumerate}
     \end{columns} \vspace{0.5cm}
-
-    \href{http://www.howtogeek.com/196060/beginner-geek-how-to-create-and-use-virtual-machines/}{Tutorial $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$} \\
-        \href{https://www.virtualbox.org/}{Virtual Box $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$}
+	
+	\begin{itemize}
+		\item[] \link{http://www.howtogeek.com/196060/beginner-geek-how-to-create-and-use-virtual-machines/}{Tutorial}
+		\item[] \link{https://www.virtualbox.org/}{Virtual Box}
+	\end{itemize}
+    
 \end{frame}
 
 
@@ -118,7 +114,7 @@
             \end{enumerate}
     \end{columns} \vspace{0.5cm}
     
-    \href{http://www.ubuntu.com/download/desktop/install-ubuntu-desktop}{Tutorial $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$} \\
+    \link{http://www.ubuntu.com/download/desktop/install-ubuntu-desktop}{Tutorial} \\
     \vspace{0.5cm}
     \textbf{Disclaimer:} We are not responsible for loss of data, broken laptops or hurt feelings. Dual boot is a dangerous activity, take precautions.
     
@@ -128,13 +124,11 @@
 	\frametitle{Dual Boot Warnings}
 	
 	\begin{itemize}
+		\setlength\itemsep{\fill}
 		\item Do not dual boot macOS
-	\end{itemize} 
-	\begin{itemize}
 		\item Backup all your data before starting
-	\end{itemize} 
-	\begin{itemize}
 		\item Make sure your drive has enough space
+		\item Be careful with hybrid drives (HDD \& SSD)
 	\end{itemize}
 \end{frame}
 
@@ -143,8 +137,8 @@
  
  	Find distro:
     \begin{itemize}
-    	\item \href{http://www.ubuntu.com/download}{Ubuntu $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$}
-		\item \href{http://www.ubuntu.com/about/about-ubuntu/flavours} {Ubuntu Flavours $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$}
+    	\item \link{http://www.ubuntu.com/download}{Ubuntu}
+		\item \link{http://www.ubuntu.com/about/about-ubuntu/flavours} {Ubuntu Flavours}
 	\end{itemize}
     
 \end{frame}
@@ -152,8 +146,10 @@
 \begin{frame}
 	\frametitle{Dual Boot - Step 2}
     
-    Make bootable USB with ISO \\
-    \href{http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows}{Bootable USB Stick $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$} \\
+    Make bootable USB with ISO
+    \begin{itemize}
+    	\item \link{http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows}{Tutorial}
+    \end{itemize}
     
 \end{frame}
 
@@ -187,7 +183,9 @@
 \begin{frame}
 	\frametitle{Dual Boot - Step 6}
     
-    Check if GRUB works by rebooting. If not, use boot-repair \\
-    \href{https://help.ubuntu.com/community/Boot-Repair}{Boot-Repair $\vcenter{\hbox{\includegraphics[width=0.45cm]{res/link}}\vspace{0.1cm}}$}
+    Check if GRUB works by rebooting. If not, use boot-repair
+    \begin{itemize}
+    	\item \link{https://help.ubuntu.com/community/Boot-Repair}{Boot-Repair}
+    \end{itemize}
     
 \end{frame}
