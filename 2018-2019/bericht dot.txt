@@ -1,0 +1,8 @@
+Hey!
+
+Morgen (dinsdag 16 oktober) houden we een practicum met the Guide to CS om extra informatie te geven over dot-code. Dit hebben jullie nodig om een visuele weergave te maken van jullie implementaties voor Gegevens abstractie en structuren, en volgend semester. Deze sessie zal doorgaan in het computerlokaal M.G.026 om 10:45.
+
+Als je wil deelnemen moet je zeker zorgen dat je je eigen laptop mee hebt, er zijn namelijk weinig computers ter beschikking.
+
+Groetjes en tot dan!
+Het Guide to CS team
