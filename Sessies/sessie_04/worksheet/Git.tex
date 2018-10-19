@@ -45,7 +45,7 @@
 					\item Voeg je ofline repository toe aan github:\\ \textit{git remote add origin [url van je github repository]}.
 				\end{enumerate}
 				
-				\item Voeg hetgeen je op je pc hebt staan toe op github:\\ git push -u origin master
+				\item Voeg hetgeen je op je pc hebt staan toe op github:\\ git push
 				
 				\item Download de wijzigingen op github:\\ \textit{git pull}
 			\end{enumerate}
@@ -57,19 +57,53 @@
 			\item in terminal:\\ \textit{git clone [repository url]}
 			\item Maak nu een nieuw project met de map die je juist gecloned hebt aan en klik op JA, dat je de bestanden wilt vervangen
 			
-			\item Gebruik de blauwe pijl om wijzigingen op te halen en de groene om er zelf door te voeren\\ \includegraphics[scale=0.3]{img/pushpull}
+			\item Gebruik de blauwe pijl om wijzigingen op te halen en de groene om er zelf door te voeren \\
+			\includegraphics[scale=0.3]{img/pushpull}
 			
 			\item Voor het toevoegen moet je nog een message geven en zeker niet vergeten om commit en push te kiezen ipv commit
+			\item gebruik de toetsencombinatie CTRL + SHIFT + TAB om te terminal te openen in PyCharm of CLion
+
 		\end{enumerate}
 		
 		\subsection{Github rules}
 		\begin{enumerate}
 			\item push pas wanneer je code compileert, comitten kan je al eerder doen aangezien dit enkel op je computer komt.
-			\item 
+			\item gebruik veel git status om te kijken wat er te gebeuren staat (voor git push, git pull, git commit, git add).
+			\item pull eerst steeds vooraleer je pusht.			
+			\item breek alles op in kleine stukjes (telkens er iets werkt commit en push je dit).
+			\item doe NOOIT "git add ." vooral je git status gedaan hebt!
 		\end{enumerate}
 		
+		\subsection{.gitignore file}
+			De .gitignore file zorgt ervoor dat niet alle files meer toegevoegd worden. Hier kan je zelf nog extra extenties of files toevoegen. Git zal op deze manier bepaalde files niet mee comitten.
 		\pagebreak
+	
+	\includegraphics[scale=0.4]{img/github.png}
 	\section{Exercise}
+	\href{https://classroom.github.com/g/8kE8ZX7m}{\textit{https://classroom.github.com/g/8kE8ZX7m}}
 		\subsection{Maak een repository aan en start een project}
+			\begin{enumerate}
+				\item (Persoon 1) ga naar de link en maak een groep aan
+				\item (Persoon 2) ga naar de link en join het team van je groepspartner
+				\item (Persoon 1\&2) kopieer de url
+				\item (Persoon 1\&2) open een terminal en typ "git clone" en doe CTRL + SHIFT + V. De repository wordt nu gedownload op je pc.
+			\end{enumerate}
+		\subsection{gitignore}
+			\emph{(Persoon 1\&2) Maak een python project met de gegeven bestanden.}
+			
+			\begin{enumerate}
+				\item 1 iemand maakt een .gitignore file. Kijk via git status wat je niet wil toevoegen en zet dit in de file. 
+				\item deze persoon doet een commit met een gepaste beschrijving en een push
+				\item de andere persoon doet een pull. Kijk wat er is veranderd.
+			\end{enumerate}
+		\subsection{project}
+			\begin{enumerate}
+				\item Open beide je project.
+				\item Eén persoon vervolledigd de fibonacci functie, de andere maakt factorial.
+				\item Zorg dat je beide de twee functies hebt door gebruik te maken van push, pull en commit
+				
+				\item Pas beide in dezelfde functie hetzelfde aan, en push beide.
+				\item Je krijgt nu een merge conflict omdat je beide hetzelfde aangepast hebt. Los dit op!		
+			\end{enumerate}			
 \end{document}
 
