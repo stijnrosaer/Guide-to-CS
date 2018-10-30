@@ -2,25 +2,30 @@
 
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage[colorlinks=true]{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
 \usepackage{graphicx}
+
+\newcommand*{\email}[1]{\href{mailto:#1}{#1}}
+\newcommand*{\uaEmail}[2]{\email{\lowercase{#1}.\lowercase{#2}@student.uantwerpen.be}}
+\newcommand*{\nameAndMail}[2]{#1 #2 - \uaEmail{#1}{#2}}
 
 \begin{document}
 	\title{Introduction to git\\ \large An initiative for 1BAinf}
-	\date{\today}
+	\date{November 13, 2018}
 
-	\author{Stijn Rosaer - stijn.rosaer@student.uantwerpen.be\\
-	Andrei Bondarenko - andrei.bondarenko@student.uantwerpen.be\\
-		Igor Schittekat - igor.schittekat@student.uantwerpen.be\\
-	Joey De Pauw - joey.depauw@student.uantwerpen.be\\
-	Senne Rosaer - senne.rosaer@student.uantwerpen.be\\
-	Toon Meynen - toon.meynen@student.uantwerpen.be
+	\author{
+		\nameAndMail{Stijn}{Rosaer} \\
+		\nameAndMail{Andrei}{Bondarenko} \\
+		\nameAndMail{Igor}{Schittekat} \\
+		\nameAndMail{Joey}{De Pauw} \\
+		\nameAndMail{Senne}{Rosaer} \\
+		\nameAndMail{Toon}{Meynen}
 	}
 	\maketitle
 	
 	\tableofcontents
 	\section{Intro}
-		Github is een versiebeheersysteem waar software geplaatst kan worden. Dit houd in dat men code hier kan plaatsen, updaten, downloaden en terug gaan naar een voorgaande versie. Ook is dit gemakkelijk wanneer men met verschillende personen tezamen werkt aan dezelfde code. We willen zo een overzicht behouden en op een wel bepaald moment elks aan code kunnen werken, zonder dat de code van de ander op dat moment beinvloed wordt.
+		Github is een versiebeheersysteem waar software geplaatst kan worden. Dit houd in dat men code hier kan plaatsen, updaten, downloaden en terug gaan naar een voorgaande versie. Ook is dit gemakkelijk wanneer men met verschillende personen tezamen werkt aan dezelfde code. We willen zo een overzicht behouden en op een wel bepaald moment elks aan code kunnen werken, zonder dat de code van de ander op dat moment be\"invloed wordt.
 	
 
 	\pagebreak
@@ -29,7 +34,7 @@
 		\subsection{Starting with Github}
 			\begin{enumerate}
 				\item Om github te gebruiken moeten we eerst een account aanmaken. Ga hiervoor naar \href{https://github.com/}{\textit{github.com}} en cre\"eer een account.\\	
-				Gebruik zeker je UA-mailadres (voornaam.achternaam@student.uantwerpen.be), je kan namelijk als student gratis private repositories aanmaken. \footnote{Het is ook mogelijk om later je studenten account te linken en alsnog de voordelen te krijgen.}
+				Gebruik zeker je UA-mailadres (voornaam.achternaam@student.uantwerpen.be), je kan namelijk als student gratis private repositories aanmaken.\footnote{Het is ook mogelijk om later je studenten account te linken en alsnog de voordelen te krijgen.}
 				\item Voor het aanvragen van je github student developer pack, moet je naar  \href{https://education.github.com/pack}{\textit{education.github.com/pack}} gaan en deze hier aanvragen. Dit kan wat tijd vragen, maar dit hebben we niet nodig om verder te kunnen.
 			\end{enumerate}
 		\subsection{Github in terminal}
@@ -71,7 +76,7 @@
 			\item gebruik veel git status om te kijken wat er te gebeuren staat (voor git push, git pull, git commit, git add).
 			\item pull eerst steeds vooraleer je pusht.			
 			\item breek alles op in kleine stukjes (telkens er iets werkt commit en push je dit).
-			\item doe NOOIT "git add ." vooral je git status gedaan hebt!
+			\item doe NOOIT "git add ." vooraleer je git status gedaan hebt!
 		\end{enumerate}
 		
 		\subsection{.gitignore file}
