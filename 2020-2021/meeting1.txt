@@ -1,0 +1,92 @@
+--- Overzicht
+Welkom
+Maatregelen
+    * Ba1 in 4 groepen
+    * Proberen maar halve dag op campus houden
+Planning
+    * welke sessies
+    * inhoud
+    * week 1
+    
+    
+
+    
+
+    
+--- Op te lossen probleme:
+    * Zijn er onthaalactiviteiten voor 1BA
+    
+    
+--- Te vragen:
+    * BB cursus
+    * Planning week 1 doorgeven
+    * Hoe werkt curcusdienst dit jaar
+    * Mail naar Wim Vanroose voor 28/09 G0.25 te gebruiken (Dualboot)
+    
+    
+--- Sessies:
+Intro:
+    Opmerkingen:
+	* virtuele rondleiding ?! filmpje maken 
+        
+    Te maken aanpassingen:
+	* WINAK uitleg (Mateo + Sam Mentor)
+        
+    On campus/ online/ opgenomen:
+	* On campus C+D eventueel na de les (15 min stelen)
+
+Dualboot:
+    Opmerkingen:
+	* Mail naar Wim Vanroose voor 28/09 G0.25 te gebruiken (Dualboot)
+        
+    Te maken aanpassingen:
+	* Niet komen met mac/UBUNTU of zonder laptop
+	* USB sticks bekijken hoe te doen
+	* Handgel
+
+    On campus/ online/ opgenomen:
+	* On campus
+        
+
+Dot:
+    Opmerkingen:
+	* Meer info in de slides
+        
+    Te maken aanpassingen:
+
+        
+    On campus/ online/ opgenomen:
+	* Opnemen in G027?
+        
+Git - in Pycharm:
+    Opmerkingen:
+	* Niet zelf laten doen
+	* Wij scenario doen
+        
+    Te maken aanpassingen:
+	* Worksheet maken om studenten alleen git te laten doen
+	* Eerst video tonen over git (https://www.youtube.com/watch?time_continue=1&v=hwP7WQkmECE&feature=emb_logo)
+	* (https://www.youtube.com/watch?v=1k_tSHihfWo&feature=youtu.be, met bijhorende slides https://slides.com/arnodeceuninck/git-gud-osoc20)
+        
+    On campus/ online/ opgenomen:
+	* Opnemen in G027?
+        
+Git - terminal:
+    Opmerkingen:
+
+        
+    Te maken aanpassingen:
+	* Slides/Video maken en zelf laten bekijken wanneer nodig
+        
+    On campus/ online/ opgenomen:
+	* Opnemen in G027?
+        
+        
+
+
+--- NIEUW ---
+* WINAK talk
+* Get to know each other
+
+
+
